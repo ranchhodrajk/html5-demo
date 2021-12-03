@@ -1,0 +1,146 @@
+.bySide{
+    display: flex;
+    margin: 20px;
+}
+.Personal-info-div{
+    margin: 10px 40px;
+}
+.Account-info-div{
+    margin: 10px 40px;
+    position: relative;
+}
+.first-name{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.first-name-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.first-name-input-div{
+    height: 22px;
+    width: 250px;
+}
+.last-name{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.last-name-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.dob{
+    width: 542px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.dob-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 20px; */
+}
+.dob-wrap{
+    /* padding-left: 70px; */
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.dob-css{
+    height: 28px;
+}
+.gender{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.gender-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.gen-div{
+    width: 258px;
+    height: 28px;
+}
+.email{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.email-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.email-note{
+    position: absolute;
+    font-size: 12px;
+    top: 30px;
+    left: 245px;
+    color: rgb(31, 31, 31,0.8);
+}
+.re-email{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.re-email-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.password{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.password-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.security-que{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.security-que-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.seq-que-div{
+    width: 258px;
+    height: 28px;
+}
+.security-ans{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;   
+}
+.security-ans-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.security-ans-note{
+    position: absolute;
+    font-size: 12px;
+    top: 270px;
+    left: 245px;
+    color: rgb(31, 31, 31,0.8);
+}
