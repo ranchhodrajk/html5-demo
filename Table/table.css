@@ -5,6 +5,7 @@ table{
 tr,td{
     border: 1px solid black;
     min-width: 120px;
+    height: 25px;
 }
 .bg-color-grey{
     background-color: rgb(228, 228, 228);
