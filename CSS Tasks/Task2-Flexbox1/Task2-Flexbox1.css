@@ -6,35 +6,56 @@
     display: flex;
 }
 .upper-row-left{
-    width: 500px;
+    /* width: 500px; */
+    width: 50vw;
     height: 600px;
     background-color: rgb(165, 216, 236);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 .upper-row-right{
-    width: 500px;
+    /* width: 500px; */
+    width: 50vw;
     height: 600px;
     background-color: rgb(156, 180, 108);
+    position: relative;
 }
 .upper-row-left-child{
     height: 35px;
     width: 100px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     background-color: rgb(7, 7, 156);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
+
+    position: absolute;
+    top: 20px;
+}
+.upper-row-left-child-1{
+    position: absolute;
+    top: 300px;
+}
+.upper-row-right-child-2{
+    position: absolute;
+    left: 240px;
+    top: 19px;
 }
 .upper-row-right-child{
     margin: 30px;
     height: 540px;
+    width: 91%;
     background-color: rgb(223, 223, 139);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    z-index: 2;
 }
 .lower-row{
     display: flex;
@@ -49,21 +70,35 @@
     justify-content: center;
     padding: 10px;
 }
+.lower-row-left-child-3{
+    position: absolute;
+    bottom: 300px;
+}
 .lower-row-left{
-    width: 500px;
+    /* width: 500px; */
+    width: 50vw;
     height: 600px;
     background-color: rgb(223, 223, 139);
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
 }
 .lower-row-right{
-    width: 500px;
+    /* width: 500px; */
+    width: 50vw;
     height: 600px;
     background-color: thistle;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.lower-row-right-child-4{
+    position: absolute;
+    top: 20px;
 }
 .lower-row-right-child{
     height: 35px;
@@ -96,17 +131,30 @@
     .upper-row-left-child{
         height: 35px;
         width: 50px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         background-color: rgb(7, 7, 156);
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
+
+        position: absolute;
+        top: 20px;
+    }
+    .upper-row-left-child-1{
+        position: absolute;
+        top: 200px;
+    }
+    .upper-row-right-child-2{
+        position: absolute;
+        left: 85px;
+        top: 19px;
     }
     .upper-row-right-child{
         margin: 30px;
         height: 340px;
+        width: auto;
         background-color: rgb(223, 223, 139);
         display: flex;
         align-items: center;
@@ -125,13 +173,18 @@
         justify-content: center;
         padding: 10px;
     }
+    .lower-row-left-child-3{
+        position: absolute;
+        bottom: 200px;
+    }
     .lower-row-left{
         width: 300px;
         height: 400px;
         background-color: rgb(223, 223, 139);
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
     }
     .lower-row-right{
         width: 300px;
@@ -169,17 +222,30 @@
     .upper-row-left-child{
         height: 35px;
         width: 50px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         background-color: rgb(7, 7, 156);
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px;
+
+        position: absolute;
+        top: 20px;
+    }
+    .upper-row-left-child-1{
+        position: absolute;
+        top: 200px;
+    }
+    .upper-row-right-child-2{
+        position: absolute;
+        left: 65px;
+        top: 19px;
     }
     .upper-row-right-child{
         margin: 30px;
         height: 340px;
+        width: auto;
         background-color: rgb(223, 223, 139);
         display: flex;
         align-items: center;
@@ -198,13 +264,18 @@
         justify-content: center;
         padding: 10px;
     }
+    .lower-row-left-child-3{
+        position: absolute;
+        bottom: 200px;
+    }
     .lower-row-left{
         width: 300px;
         height: 400px;
         background-color: rgb(223, 223, 139);
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
     }
     .lower-row-right{
         width: 300px;
