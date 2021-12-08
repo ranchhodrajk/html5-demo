@@ -1,4 +1,28 @@
+.picture-heading{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.picture-img{
+    width: 100%;
+    /* max-height: 100vh; */
+    /* height: 100vh; */
+    /* height: calc(100vh - 70px); */
+
+}
 .sty-img{
     width: 100vw;
+    /* max-height: 100vh; */
     height: 100vh;
+}
+.mob-img{
+    width: 100%;
+    /* max-height: 100vh; */
+    height: calc(100% - 70px);
+}
+.lap-img{
+    width: 100%;
+}
+.desk-img{
+    width: 100%;
 }
