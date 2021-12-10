@@ -61,3 +61,11 @@ console.log("Array short and reverse");
 console.log(fruitColors.sort());
 console.log(fruitColors.reverse());
 
+
+console.log("================================================");
+console.log("Array Iteration");
+console.log(fruitColors);
+fruitColors.forEach(function show (item,index){
+    console.log(index + " " + item);
+});
+
