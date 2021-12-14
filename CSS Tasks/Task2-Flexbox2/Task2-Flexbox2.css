@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.upper{
+    height: 300px;
+    width: 100vw;
+    background-color: rgb(255, 123, 0);
+    position: relative;
+}
+.text-A{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.form{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.search-input{
+    width: 530px;
+    height: 30px;
+    margin-right: 10px;
+}
+.search-btn{
+    height: 34px;
+    width: 90px;
+}
+.middle{
+    height: 280px;
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.text-B{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.middle-upper-row-left{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(137, 178, 216);
+    border: 1px solid rgb(53, 124, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-upper-row{
+    display: flex;
+    justify-content: space-between;
+}
+.middle-lower-row{
+    display: flex;
+    justify-content: space-between;
+}
+.middle-wrap{
+    margin: 10px;
+}
+.lower{
+    height: 300px;
+    width: 100vw;
+    background-color: rgb(74, 136, 13);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.lower-child{
+    height: 100px;
+    width: 80px;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid black;
+}
+.text-C{
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:414px){
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-input{
+        width: 230px;
+        height: 30px;
+        
+    }
+    .form-input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .form-btn{
+        display: flex;
+        justify-content: center;
+    }
+}

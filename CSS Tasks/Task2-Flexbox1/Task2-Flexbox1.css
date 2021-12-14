@@ -1,0 +1,298 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.upper-row{
+    display: flex;
+}
+.upper-row-left{
+    /* width: 500px; */
+    width: 50vw;
+    height: 600px;
+    background-color: rgb(165, 216, 236);
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.upper-row-right{
+    /* width: 500px; */
+    width: 50vw;
+    height: 600px;
+    background-color: rgb(156, 180, 108);
+    position: relative;
+}
+.upper-row-left-child{
+    height: 35px;
+    width: 100px;
+    /* margin-top: 10px; */
+    background-color: rgb(7, 7, 156);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    position: absolute;
+    top: 20px;
+}
+.upper-row-left-child-1{
+    position: absolute;
+    top: 300px;
+}
+.upper-row-right-child-2{
+    position: absolute;
+    left: 50%;
+    top: 19px;
+}
+.upper-row-right-child{
+    margin: 30px;
+    height: 540px;
+    width: calc(100% - 60px);
+    background-color: rgb(223, 223, 139);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+}
+.lower-row{
+    display: flex;
+}
+.lower-row-left-child{
+    height: 35px;
+    width: 100px;
+    background-color: rgb(7, 7, 156);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.lower-row-left-child-3{
+    position: absolute;
+    bottom: 300px;
+}
+.lower-row-left{
+    /* width: 500px; */
+    width: 50vw;
+    height: 600px;
+    background-color: rgb(223, 223, 139);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.lower-row-right{
+    /* width: 500px; */
+    width: 50vw;
+    height: 600px;
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.lower-row-right-child-4{
+    position: absolute;
+    top: 20px;
+}
+.lower-row-right-child{
+    height: 35px;
+    width: 100px;
+    background-color: rgb(7, 7, 156);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media only screen and (min-width:321px) and (max-width:768px){
+    
+    .upper-row{
+        display: flex;
+    }
+    .upper-row-left{
+        width: 50vw;
+        background-color: rgb(165, 216, 236);
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    .upper-row-right{
+        width: 50vw;
+        height: 400px;
+        background-color: rgb(156, 180, 108);
+    }
+    .upper-row-left-child{
+        height: 35px;
+        width: 50px;
+        /* margin-top: 10px; */
+        background-color: rgb(7, 7, 156);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+        position: absolute;
+        top: 20px;
+    }
+    .upper-row-left-child-1{
+        position: absolute;
+        top: 200px;
+    }
+    .upper-row-right-child-2{
+        position: absolute;
+        left: 50%;
+        top: 19px;
+    }
+    .upper-row-right-child{
+        margin: 30px;
+        height: 340px;
+        width: calc(100% - 60px);
+        background-color: rgb(223, 223, 139);
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .lower-row{
+        display: flex;
+    }
+    .lower-row-left-child{
+        height: 35px;
+        width: 50px;
+        background-color: rgb(7, 7, 156);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .lower-row-left-child-3{
+        position: absolute;
+        bottom: 200px;
+    }
+    .lower-row-left{
+        width: 50vw;
+        height: 400px;
+        background-color: rgb(223, 223, 139);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+    .lower-row-right{
+        width: 50vw;
+        height: 400px;
+        background-color: thistle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lower-row-right-child{
+        height: 35px;
+        width: 50px;
+        background-color: rgb(7, 7, 156);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width:320px){
+    
+    .upper-row-left{
+        width: 300px;
+        background-color: rgb(165, 216, 236);
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    .upper-row-right{
+        width: 300px;
+        height: 400px;
+        background-color: rgb(156, 180, 108);
+    }
+    .upper-row-left-child{
+        height: 35px;
+        width: 50px;
+        /* margin-top: 10px; */
+        background-color: rgb(7, 7, 156);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+        position: absolute;
+        top: 20px;
+    }
+    .upper-row-left-child-1{
+        position: absolute;
+        top: 200px;
+    }
+    .upper-row-right-child-2{
+        position: absolute;
+        left: 50%;
+        top: 19px;
+    }
+    .upper-row-right-child{
+        margin: 30px;
+        height: 340px;
+        width: auto;
+        background-color: rgb(223, 223, 139);
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .lower-row{
+        display: flex;
+    }
+    .lower-row-left-child{
+        height: 35px;
+        width: 50px;
+        background-color: rgb(7, 7, 156);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .lower-row-left-child-3{
+        position: absolute;
+        bottom: 200px;
+    }
+    .lower-row-left{
+        width: 300px;
+        height: 400px;
+        background-color: rgb(223, 223, 139);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+    .lower-row-right{
+        width: 300px;
+        height: 400px;
+        background-color: thistle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lower-row-right-child{
+        height: 35px;
+        width: 50px;
+        background-color: rgb(7, 7, 156);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+}
