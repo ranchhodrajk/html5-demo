@@ -1,0 +1,24 @@
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+tr,td{
+    border: 1px solid black;
+    min-width: 120px;
+    height: 25px;
+}
+.bg-color-grey{
+    background-color: rgb(228, 228, 228);
+}
+@media only screen and (min-width:769px){
+    table{
+        width: 730px;
+        height: 400px;
+    }
+}
+@media only screen and (max-width:540px){
+    table{
+        width: 530px;
+        height: 300px;
+    }
+}
