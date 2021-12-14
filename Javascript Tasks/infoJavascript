@@ -13,3 +13,97 @@ Object.assign(user, permissions1, permissions2);
 
 Reference-source:[https://javascript.info/object-copy]
 ==============================================================================================
+JSON.stringify [EXCEPTION]
+==============================================================================================
+
+->  JSON is data-only language-independent specification, so some JavaScript-specific object properties are skipped by JSON.stringify.
+
+
+Namely:
+-------
+1.Function properties (methods).
+2.Symbolic keys and values.
+3.Properties that store undefined.
+==============================================================================================
+JSON.stringify [Formating]
+==============================================================================================
+let user = {
+  name: "John",
+  age: 25,
+  roles: {
+    isAdmin: false,
+    isEditor: true
+  }
+};
+
+alert(JSON.stringify(user, null, 2));
+/* two-space indents:
+{
+  "name": "John",
+  "age": 25,
+  "roles": {
+    "isAdmin": false,
+    "isEditor": true
+  }
+}
+*/
+==============================================================================================
+Array & Object [Make same copy , modifying original to not change copy]
+==============================================================================================
+
+Array
+-----
+
+let arr = [1, 2, 3];
+
+let arrCopy = [...arr]; // spread the array into a list of parameters
+                        // then put the result into a new array
+
+// do the arrays have the same contents?
+alert(JSON.stringify(arr) === JSON.stringify(arrCopy)); // true
+
+// are the arrays equal?
+alert(arr === arrCopy); // false (not same reference)
+
+// modifying our initial array does not modify the copy:
+arr.push(4);
+alert(arr); // 1, 2, 3, 4
+alert(arrCopy); // 1, 2, 3
+
+Object
+------
+let obj = { a: 1, b: 2, c: 3 };
+
+let objCopy = { ...obj }; // spread the object into a list of parameters
+                          // then return the result in a new object
+
+// do the objects have the same contents?
+alert(JSON.stringify(obj) === JSON.stringify(objCopy)); // true
+
+// are the objects equal?
+alert(obj === objCopy); // false (not same reference)
+
+// modifying our initial object does not modify the copy:
+obj.d = 4;
+alert(JSON.stringify(obj)); // {"a":1,"b":2,"c":3,"d":4}
+alert(JSON.stringify(objCopy)); // {"a":1,"b":2,"c":3}
+
+
+Reference: https://javascript.info/rest-parameters-spread
+==============================================================================================
+Scrolling Events 
+==============================================================================================
+scrollBy(x,y)
+scrollTo(0,0)
+elem.scrollIntoView()
+elem.scrollIntoView(false)
+document.body.style.overflow = "hidden"
+document.body.style.overflow = ""
+
+and 
+
+etc...
+
+reference:https://javascript.info/size-and-scroll-window
+==============================================================================================
+
