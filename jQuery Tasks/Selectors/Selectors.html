@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form.css">
-    <title>Form</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Selectors.css">
+    <title>jQuery - Selectors</title>
 </head>
 <body>
+    <h1>jQuery - Selectors</h1>
+
     <div class="main">
         <div class="Personal-info">
             <div class="Personal-info-heading">
-                <h2>Personal Information</h2>
+                <h2 id="personalID">Personal Information</h2>
             </div>
             <div class="Personal-info-div">
                 <div class="first-name">
-                    <div class="first-name-text">First Name: </div>
+                    <div class="first-name-text jqclass">First Name: </div>
                     <div class="first-name-input">
                         <input type="text" class="first-name-input-div">
                     </div>
                 </div>
                 <div class="last-name">
-                    <div class="last-name-text">Last Name: </div>
+                    <div class="last-name-text jqclass">Last Name: </div>
                     <div class="last-name-input">
                         <input type="text" class="first-name-input-div">
                     </div>
                 </div>
                 <div class="dob">
-                    <div class="dob-text">Date Of Birth:</div>
+                    <div class="dob-text jqclass">Date Of Birth:</div>
                     <div class="dob-wrap">
                         <div class="dob-input-month">
                             <select name="month" id="month" class="dob-css">
@@ -67,7 +70,7 @@
                     </div>
                 </div>
                 <div class="gender ">
-                    <div class="gender-text">Gender:</div>
+                    <div class="gender-text jqclass">Gender:</div>
                     <div class="gender-input">
                         <select name="gender" id="gender" class="gen-div">
                             <option value="male">Male</option> 
@@ -80,36 +83,36 @@
         </div>
         <div class="Account-info">
             <div class="Account-info-heading">
-                <h2>Account Information</h2>
+                <h2 id="accountID">Account Information</h2>
             </div>
             <div class="Account-info-div">
                 <div class="email">
-                    <div class="email-text">Email:</div>
+                    <div class="email-text jqclassAC">Email:</div>
                     <div class="email-input">
                         <input type="email" class="first-name-input-div">
                     </div>
                 </div>
                 <div class="email-note">(Your email address will be your username)</div>
                 <div class="re-email">
-                    <div class="re-email-text">Re-type Email:</div>
+                    <div class="re-email-text jqclassAC">Re-type Email:</div>
                     <div class="re-email-input">
                         <input type="email" class="first-name-input-div">
                     </div>
                 </div>
                 <div class="password">
-                    <div class="password-text">Password:</div>
+                    <div class="password-text jqclassAC">Password:</div>
                     <div class="password-input">
                         <input type="password" class="first-name-input-div">
                     </div>
                 </div>
                 <div class="password bySide">
-                    <div class="password-text">Re-type Password:</div>
+                    <div class="password-text jqclassAC">Re-type Password:</div>
                     <div class="password-input">
                         <input type="password" class="first-name-input-div">
                     </div>
                 </div>
                 <div class="security-que">
-                    <div class="security-que-text">Security Question:</div>
+                    <div class="security-que-text jqclassAC">Security Question:</div>
                     <div class="security-que-input">
                         <select name="sec-que" id="sec-que" class="seq-que-div">
                             <option value="1">What is your favourite color?</option> 
@@ -120,7 +123,7 @@
                     </div>
                 </div>
                 <div class="security-ans">
-                    <div class="security-ans-text">Security Answer:</div>
+                    <div class="security-ans-text jqclassAC">Security Answer:</div>
                     <div class="security-ans-input">
                         <input type="text" class="first-name-input-div">
                     </div>
@@ -130,23 +133,23 @@
         </div>
         <div class="Contact-info">
             <div class="Contact-info-heading">
-                <h2>Contact Information</h2>
+                <h2  id="contactID">Contact Information</h2>
             </div>
             <div class="Contact-info-div">
                 <div class="security-ans">
-                    <div class="security-ans-text">Address: </div>
+                    <div class="security-ans-text jqclassAD">Address: </div>
                     <div class="security-ans-input">
                         <input type="text" class="first-name-input-div">
                     </div>
                 </div>
                 <div class="security-ans">
-                    <div class="security-ans-text">City: </div>
+                    <div class="security-ans-text jqclassAD">City: </div>
                     <div class="security-ans-input">
                         <input type="text" class="first-name-input-div">
                     </div>
                 </div>
                 <div class="security-que">
-                    <div class="security-que-text">State:</div>
+                    <div class="security-que-text jqclassAD">State:</div>
                     <div class="security-que-input">
                         <select name="sec-que" id="sec-que" class="seq-que-div">
                             <option value="1">Gujarat</option> 
@@ -157,7 +160,7 @@
                     </div>
                 </div>
                 <div class="zip-code">
-                    <div class="zip-code-text">Zip Code: </div>
+                    <div class="zip-code-text jqclassAD">Zip Code: </div>
                     <div class="zip-code-input">
                         <input type="number" class="zip-code-div">
                     </div>
@@ -166,7 +169,7 @@
                     </div>
                 </div>
                 <div class="zip-code">
-                    <div class="zip-code-text">Phone: </div>
+                    <div class="zip-code-text jqclassAD">Phone: </div>
                     <div class="zip-code-input">
                         <input type="number" class="phone-div">
                     </div>
@@ -182,6 +185,14 @@
                 </div>
             </div>
         </div>
+        <div class="submit-btn-div">
+            <button class="submit-btn">Submit</button>
+        </div>
     </div>
+    <div class="hiddenText" id="hiddenText">
+        <h3>Your form is Submmited &#127881;</h3>
+    </div>
+
+    <script src="Selectors.js"></script>
 </body>
 </html>
