@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Traversing.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
+    <title>Traversing - jQuery</title>
+</head>
+<body>
+    <div class="main" id="parents-untill">
+        <div class="Personal-info" >
+            <div class="Personal-info-heading">
+                <h2>Personal Information
+                    <div id="Personal-info-id"></div>
+                </h2>
+            </div>
+            <div class="Personal-info-div" >
+                <div class="first-name">
+                    <div class="first-name-text">First Name: </div>
+                    <div class="first-name-input">
+                        <input type="text" class="first-name-input-div">
+                    </div>
+                </div>
+                <div class="last-name">
+                    <div class="last-name-text">Last Name: </div>
+                    <div class="last-name-input">
+                        <input type="text" class="first-name-input-div">
+                    </div>
+                </div>
+                <div class="dob">
+                    <div class="dob-text">Date Of Birth:</div>
+                    <div class="dob-wrap">
+                        <div class="dob-input-month">
+                            <select name="month" id="month" class="dob-css">
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                        </div>
+                        <div class="dob-input-day">
+                            <select name="day" id="day" class="dob-css">
+                                <option value="sunday">Sunday</option>
+                                <option value="Monday">Monday</option>
+                                <option value="tuesday">Tuesday</option>
+                                <option value="wednesday">Wednesday</option>
+                                <option value="thursday">Thursday</option>
+                                <option value="friday">friday</option>
+                                <option value="saturday">Saturday</option>
+                            </select>
+                        </div>
+                        <div class="dob-input-year">
+                            <select name="year" id="year" class="dob-css">
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option> 
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="gender ">
+                    <div class="gender-text">Gender:</div>
+                    <div class="gender-input">
+                        <select name="gender" id="gender" class="gen-div">
+                            <option value="male">Male</option> 
+                            <option value="female">Female</option> 
+                            <option value="other">Other</option> 
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Account-info">
+            <div class="Account-info-heading">
+                <h2 id="find-h2">Account Information</h2>
+            </div>
+            <div class="Account-info-div">
+                <div class="email" id="siblings-test">
+                    <div class="email-text">Email:</div>
+                    <div class="email-input">
+                        <input type="email" class="first-name-input-div">
+                    </div>
+                </div>
+                <div class="email-note">(Your email address will be your username)</div>
+                <div class="re-email">
+                    <div class="re-email-text">Re-type Email:</div>
+                    <div class="re-email-input">
+                        <input type="email" class="first-name-input-div">
+                    </div>
+                </div>
+                <div class="password">
+                    <div class="password-text">Password:</div>
+                    <div class="password-input">
+                        <input type="password" class="first-name-input-div">
+                    </div>
+                </div>
+                <div class="password bySide">
+                    <div class="password-text">Re-type Password:</div>
+                    <div class="password-input">
+                        <input type="password" class="first-name-input-div">
+                    </div>
+                </div>
+                <div class="security-que">
+                    <div class="security-que-text">Security Question:</div>
+                    <div class="security-que-input">
+                        <select name="sec-que" id="sec-que" class="seq-que-div">
+                            <option value="1">What is your favourite color?</option> 
+                            <option value="2">What is your father name?</option> 
+                            <option value="3">What is your mother name?</option> 
+                            <option value="4">What is your favourite food?</option> 
+                        </select>
+                    </div>
+                </div>
+                <div class="security-ans">
+                    <div class="security-ans-text">Security Answer:</div>
+                    <div class="security-ans-input">
+                        <input type="text" class="first-name-input-div">
+                    </div>
+                </div>
+                <div class="security-ans-note">(not case-sensitive)</div>
+            </div>
+        </div>
+        <div class="Contact-info" id="aa">
+            <div class="Contact-info-heading">
+                <h2 id="find-h2-or">Contact Information</h2>
+            </div>
+            <div class="Contact-info-div">
+                <div class="security-ans" id="sibling-next">
+                    <div class="security-ans-text">Address: </div>
+                    <div class="security-ans-input">
+                        <input type="text" class="first-name-input-div">
+                    </div>
+                </div>
+                <div class="security-ans" id="sibling-nextAll">
+                    <div class="security-ans-text">City: </div>
+                    <div class="security-ans-input">
+                        <input type="text" class="first-name-input-div">
+                    </div>
+                </div>
+                <div class="security-que">
+                    <div class="security-que-text">State:</div>
+                    <div class="security-que-input">
+                        <select name="sec-que" id="sec-que" class="seq-que-div">
+                            <option value="1">Gujarat</option> 
+                            <option value="2">Rajasthan</option> 
+                            <option value="3">Maharastra</option> 
+                            <option value="4">Delhi</option> 
+                        </select>
+                    </div>
+                </div>
+                <div class="zip-code">
+                    <div class="zip-code-text">Zip Code: </div>
+                    <div class="zip-code-input">
+                        <input type="number" class="zip-code-div">
+                    </div>
+                    <div class="Optional-div">
+                        <div>(Optional)</div>
+                    </div>
+                </div>
+                <div class="zip-code">
+                    <div class="zip-code-text">Phone: </div>
+                    <div class="zip-code-input">
+                        <input type="number" class="phone-div">
+                    </div>
+                    <div class="device">
+                        <select name="device-ph" id="device-ph" class="device-div">
+                            <option value="mobile">Mobile</option>
+                            <option value="tele-phone">Tele-phone</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ph-note">
+                    (No spaces or dashes)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Traversing.js"></script>
+
+</body>
+</html>

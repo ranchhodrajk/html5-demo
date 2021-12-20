@@ -1,0 +1,249 @@
+.bySide{
+    display: flex;
+    margin: 20px;
+}
+.Personal-info-div{
+    margin: 10px 40px;
+}
+.Account-info-div{
+    margin: 10px 40px;
+    position: relative;
+}
+.first-name{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.first-name-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.first-name-input-div{
+    height: 22px;
+    width: 250px;
+}
+.last-name{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.last-name-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.dob{
+    width: 542px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 20px 0px;
+}
+.dob-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 42px;
+}
+.dob-wrap{
+    /* padding-left: 70px; */
+    display: flex;
+    justify-content: space-between;
+    width: 258px;
+}
+.dob-css{
+    height: 28px;
+}
+.gender{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.gender-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.gen-div{
+    width: 258px;
+    height: 28px;
+}
+.email{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.email-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.email-note{
+    position: absolute;
+    font-size: 12px;
+    top: 30px;
+    left: 245px;
+    color: rgb(31, 31, 31,0.8);
+}
+.re-email{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.re-email-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.password{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.password-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.security-que{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.security-que-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.seq-que-div{
+    width: 258px;
+    height: 28px;
+}
+.security-ans{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;   
+}
+.security-ans-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.security-ans-note{
+    position: absolute;
+    font-size: 12px;
+    top: 270px;
+    left: 245px;
+    color: rgb(31, 31, 31,0.8);
+}
+.zip-code{
+    width: 500px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 20px 0px;
+}
+.zip-code-text{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+.zip-code-input{
+    margin-left: 41px;
+}
+.zip-code-div{
+    height: 21px;
+    width: 70px;
+}
+.Optional-div{
+    border: 1px solid grey;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-left: 10px;
+    width: 70px;
+}
+.phone-div{
+    width: 151px;
+    height: 21px;
+}
+.device-div{
+    margin-left: 10px;
+    height: 27px;
+}
+.Contact-info-div{
+    margin: 10px 40px;
+    position: relative;
+}
+.ph-note{
+    position: absolute;
+    left: 240px;
+    top: 220px;
+    color: rgb(31, 31, 31,0.8);
+    font-size: 12px;
+}
+h2{
+    color:rgb(255, 174, 0);
+}
+h3{
+    display: flex;
+    justify-content: center;
+    color: darkgreen;
+}
+.main-form-heading{
+    display: flex;
+    margin-left: 150px;
+    color: rgb(255, 174, 0);
+}
+.btn-submit{
+    margin-top: 10px;
+    margin-left: 330px;
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 174, 0);
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    border: 2px solid rgb(255, 174, 0);
+    background-color: white;
+    color: rgb(255, 174, 0);
+}
+.success{
+    background-color: rgb(223, 252, 233);
+    border: 1px solid green;
+    height: 24px;
+}
+.reject{
+    background-color: rgb(252, 231, 231);
+    border: 1px solid red;
+    height: 24px;
+}
+.successOption{
+    background-color: rgb(223, 252, 233);
+    border: 1px solid green;
+    height: 28px;
+}
+.rejectOption{
+    background-color: rgb(252, 231, 231);
+    border: 1px solid red;
+    height: 28px;
+}
+.errMess{
+    font-size: 14px;
+    color: red;
+    margin-top: 25px;
+    margin-left: 280px;
+}

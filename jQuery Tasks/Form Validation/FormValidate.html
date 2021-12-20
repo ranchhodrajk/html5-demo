@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="FormValidate.css" />
+
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="main" id="mainId">
+      <div class="form-main">
+        <div class="Personal-info">
+          <div class="main-form-heading">
+              <h1>Employee Information</h1>
+          </div>
+          <div class="Personal-info-heading">
+            <h2>Personal Information</h2>
+          </div>
+          <div class="Personal-info-div">
+            <div class="first-name">
+              <div class="first-name-text">First Name:</div>
+              <div class="first-name-input">
+                <input type="text" class="first-name-input-div" onchange="onChangeFname()" id="fname"/>
+              </div>
+            </div>
+            <div class="last-name">
+              <div class="last-name-text">Last Name:</div>
+              <div class="last-name-input">
+                <input type="text" class="first-name-input-div" onchange="onChangeLname()" id="lname"/>
+              </div>
+            </div>
+            <div class="dob">
+              <div class="dob-text">Date Of Birth:</div>
+              <div class="dob-wrap">
+                <div class="dob-input-month">
+                  <select name="month" id="month" class="dob-css" onchange="onChangeMonth()">
+                    <option value=""></option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+                </div>
+                <div class="dob-input-day">
+                  <select name="day" id="day" class="dob-css" onchange="onChangeDay()">
+                    <option value=""></option>
+                    <option value="sunday">Sunday</option>
+                    <option value="Monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">friday</option>
+                    <option value="saturday">Saturday</option>
+                  </select>
+                </div>
+                <div class="dob-input-year">
+                  <select name="year" id="year" class="dob-css" onchange="onChangeYear()">
+                    <option value=""></option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="gender">
+              <div class="gender-text">Gender:</div>
+              <div class="gender-input">
+                <select name="gender" id="gender" class="gen-div" onchange="onChangeGender()">
+                  <option value=""></option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Account-info">
+          <div class="Account-info-heading">
+            <h2>Account Information</h2>
+          </div>
+          <div class="Account-info-div">
+            <div class="email">
+              <div class="email-text">Email:</div>
+              <div class="email-input">
+                <input type="email" class="first-name-input-div" onchange="onChangeEmail()" id="email"/>
+              </div>
+            </div>
+            <div class="email-note">
+              (Your email address will be your username)
+            </div>
+            <div class="re-email">
+              <div class="re-email-text">Re-type Email:</div>
+              <div class="re-email-input">
+                <input type="email" class="first-name-input-div" onchange="onChangeReEmail()" id="reemail"/>
+              </div>
+            </div>
+            <div class="password">
+              <div class="password-text">Password:</div>
+              <div class="password-input">
+                <input type="password" class="first-name-input-div" onchange="onChangePass()" id="pass"/>
+              </div>
+            </div>
+            <div class="password bySide">
+              <div class="password-text">Re-type Password:</div>
+              <div class="password-input">
+                <input type="password" class="first-name-input-div" onchange="onChangeRePass()" id="repass"/>
+              </div>
+            </div>
+            <div class="security-que">
+              <div class="security-que-text">Security Question:</div>
+              <div class="security-que-input">
+                <select name="sec-que" id="sec-que" class="seq-que-div" onchange="onChangeSecQue()">
+                  <option value=""></option>
+                  <option value="1">What is your favourite color?</option>
+                  <option value="2">What is your father name?</option>
+                  <option value="3">What is your mother name?</option>
+                  <option value="4">What is your favourite food?</option>
+                </select>
+              </div>
+            </div>
+            <div class="security-ans">
+              <div class="security-ans-text">Security Answer:</div>
+              <div class="security-ans-input">
+                <input type="text" class="first-name-input-div" onchange="onChangeSecAns()" id="secans"/>
+              </div>
+            </div>
+            <div class="security-ans-note">(not case-sensitive)</div>
+          </div>
+        </div>
+        <div class="Contact-info">
+          <div class="Contact-info-heading">
+            <h2>Contact Information</h2>
+          </div>
+          <div class="Contact-info-div">
+            <div class="security-ans">
+              <div class="security-ans-text">Address:</div>
+              <div class="security-ans-input">
+                <input type="text" class="first-name-input-div"  onchange="onChangeAdd()" id="address"/>
+              </div>
+            </div>
+            <div class="security-ans">
+              <div class="security-ans-text">City:</div>
+              <div class="security-ans-input">
+                <input type="text" class="first-name-input-div" onchange="onChangeCity()" id="city"/>
+              </div>
+            </div>
+            <div class="security-que">
+              <div class="security-que-text">State:</div>
+              <div class="security-que-input">
+                <select name="sec-que" id="state-id" class="seq-que-div" onchange="onChangeState()">
+                  <option value=""></option>
+                  <option value="1">Gujarat</option>
+                  <option value="2">Rajasthan</option>
+                  <option value="3">Maharastra</option>
+                  <option value="4">Delhi</option>
+                </select>
+              </div>
+            </div>
+            <div class="zip-code">
+              <div class="zip-code-text">Zip Code:</div>
+              <div class="zip-code-input">
+                <input type="number" class="zip-code-div" onchange="onChangePin()" id="pin"/>
+              </div>
+              <div class="Optional-div">
+                <div>(Optional)</div>
+              </div>
+            </div>
+            <div class="zip-code">
+              <div class="zip-code-text">Phone:</div>
+              <div class="zip-code-input">
+                <input type="text" class="phone-div" onchange="onChangePh()" id="ph"/>
+              </div>
+              <div class="device">
+                <select name="device-ph" id="device-ph" class="device-div" onchange="onChangePhone()">
+                  <option value=""></option>
+                  <option value="mobile">Mobile</option>
+                  <option value="tele-phone">Tele-phone</option>
+                </select>
+              </div>
+            </div>
+            <div class="ph-note">(No spaces or dashes)</div>
+          </div>
+        </div>
+      </div>
+      <div class="errMess" id="samePass">*Sorry, your password and confirm password are not same.</div>
+      <div class="errMess" id="sameEmail">*Sorry, your email and re-email are not same.</div>
+      <div class="form-button">
+          <Button class="btn-submit" onclick="onClickSubmit()" id="btn-id">Submit</Button>
+      </div>
+    </div>
+    <div class="hiddenText" id="hiddenText">
+      <h3>Congratulations! Your form is successfully Submmited &#127881;</h3>
+    </div>
+
+    <script src="FormValidate.js"></script>
+  </body>
+</html>
