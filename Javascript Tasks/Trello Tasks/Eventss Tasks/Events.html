@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event tasks</title>
+</head>
+<body>
+    <div class="main">
+        <div class="Form" onmouseover="onmouseoverForm()" onmouseout="onmouseoutFrom()">
+            <fieldset>
+                <legend>Event</legend>
+                <div class="fname">
+                    <div class="fname-text">First Name:</div>
+                    <div class="fname-input"><input type="text" id="fname" onchange="onChangeFname()" oncopy="oncopyFname()" onblur="onblurFname()" onkeypress="onkeypressFname()" onkeyup="onkeyupFname()" onkeydown="onkeydownFname()"></div>
+                </div>
+                <div class="lname">
+                    <div class="lname-text">Last Name:</div>
+                    <div class="lname-input"><input type="text" id="lname" onchange="onChangeLname()" oncopy="oncopyLname()" onblur="onblurLname()" onkeypress="onkeypressLname()" onkeyup="onkeyupLname()" onkeydown="onkeydownLname()"></div>
+                </div>
+                <br>
+                <div class="submit">
+                    <div class="submit-btn"><button id="sub" onclick="btnSub()" onmouseover="onmouseoverButton()">Submit</button></div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="test" onmouseover="onmouseoverMe()"></div>
+        <div id="test1" onmouseover="onmouseoverMe()"></div>
+        <div id="test2"></div>
+    </div>
+
+
+    <script src="Events.js"></script>
+</body>
+</html>
