@@ -31,7 +31,7 @@ document.getElementById("fname").classList.add("myFname");
 console.log("=======================================================");
 
 
-// console.log(document.getElementById("fname").lastChild.innerHTML);
+// console.log(document.getElementById("form").lastChild);
 // console.log(document.getElementById("fname").firstChild.innerHTML);
 
 console.log(document.getElementById("fname").parentNode);
