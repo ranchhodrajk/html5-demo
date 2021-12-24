@@ -57,3 +57,12 @@
 .my-text-hover:hover{
     color: white;
 }
+
+@media (max-width: 575.98px) { 
+
+    .header-main{
+        height: 135vh;
+        /* width: 99vw; */
+    }
+
+ }
