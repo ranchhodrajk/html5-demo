@@ -30,8 +30,10 @@
     background-color: transparent;
     color: white;
     border: none;
-    
     outline: none;
+}
+.my-font-1{
+    font-size: 50px;
 }
 .head-form-bg{
     background-color: white;
@@ -61,8 +63,11 @@
 @media (max-width: 575.98px) { 
 
     .header-main{
-        height: 135vh;
+        height: 130vh;
         /* width: 99vw; */
+    }
+    .my-font-1{
+        font-size: 30px;
     }
 
  }
