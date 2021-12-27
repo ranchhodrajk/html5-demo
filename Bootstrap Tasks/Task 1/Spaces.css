@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header-main{
+    background-image: url(./Assets/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg);
+    height: 120vh;
+    background-size: cover;
+    /* width: 99vw; */
+}
+.img-height-set{
+    height: 400px;
+}
+.shade-1{
+    color: rgb(116, 118, 138);
+}
+.shade-2{
+    color: rgb(197, 197, 202);
+}
+.font-size-2{
+    font-size: 14px;
+}
+.font-size-1{
+    font-size: 18px;
+}
+.my-nav{
+    background-color: none;
+}
+.header-select{
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+.my-font-1{
+    font-size: 50px;
+}
+.head-form-bg{
+    background-color: white;
+}
+.header-select-op{
+    color: black;
+    background-color: transparent;
+}
+.img-op-1:hover{
+    opacity: 0.7;
+}
+.my-card-img{
+    margin: 20px auto 20px auto;
+    background-color: rgb(189, 210, 243);
+    padding: 20px;
+}
+.btn-hover-text{
+    color: white;
+}
+.my-text-hover{
+    color: #1266F1;
+}
+.my-text-hover:hover{
+    color: white;
+}
+
+@media (max-width: 575.98px) { 
+
+    .header-main{
+        height: 130vh;
+        /* width: 99vw; */
+    }
+    .my-font-1{
+        font-size: 30px;
+    }
+
+ }

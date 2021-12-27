@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    background-image: url(./Assets/header-bg.png);
+    background-size: cover;
+}
+.temp{
+    background-color: #1c1d21;
+}
+.my-card-img{
+    margin: 20px auto 5px auto;
+    background-image: url(./Assets/card-icon.png);
+    padding: 20px;
+}
+.text-secondary-my{
+    color: rgb(159, 159, 173);
+}
+.my-gradi{
+    background-image: linear-gradient(120deg, rgb(53, 133, 253), hotpink, orange);
+}
+.my-text-1{
+    font-size: 12px;
+}
+.my-btn{
+    border: none;
+    background: transparent;
+}

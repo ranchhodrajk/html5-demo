@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spaces</title>
+
+    <!-- bootstrap ambedded  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="Spaces.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="container-fluid header-main">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid my-3 mx-5">
+                    <a class="navbar-brand text-light fs-4 fw-bold" href="#">
+                        <u>S</u>PACES</a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Pages 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Pages 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Pages 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Support
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Support 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Support 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Support 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex flex-column flex-sm-row ">
+                            <button type="button" class="btn btn-primary me-sm-3 mt-3 mt-sm-0 py-sm-1 me-1">
+                                Login
+                            </button>
+                            <button type="button" class="btn btn-light mx-sm-3 mx-1 mt-3 mt-sm-0 py-sm-1">
+                                Sign Up
+                            </button>
+                            <button type="button" class="btn btn-outline-light border-2 mt-3 mt-sm-0 mx-sm-3 mx-1  ">
+                                <strong>+</strong> List a Space
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="row my-xxl-5"></div>
+            <div class="row my-md-5 my-0"></div>
+            <div class="row">
+                <div class="col-12 text-center text-light mt-5 my-font-1">
+                    Find your perfect <span class="fw-bold"> coworking </span> space.
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 shade-2 text-center mt-4 font-size-1">
+                    <b>12,000+</b> coworking spaces with desks, office and meeting rooms
+                    in 165+ countries.
+                </div>
+                <div class="col-12 shade-2 text-center mt-1 font-size-1">
+                    Discover and reserve space today.
+                </div>
+            </div>
+            <form class="row g-3 my-4 mx-5 px-5 py-3 d-flex justify-content-center head-form-bg">
+                <div class="col-sm-4 mb-3 position-relative ">
+                    <div class="position-absolute top-50 start-0 translate-middle-y ms-4">
+                        <img src="./Assets/search-grey.svg" alt="" height="18px" width="18px">
+                    </div>
+                    <input type="email" class="form-control ps-5 py-sm-2 shade-1" id="inputPassword2"
+                        placeholder="Search location" />
+                </div>
+                <div class="col-sm-4 mb-3">
+                    <input type="date" class="form-control ps-5  py-sm-2 shade-1 text-secondary" id="inputPassword2" placeholder="Select date" />
+                </div>
+                <div class="col-sm-4 ">
+                    <button type="submit" class="btn btn-primary w-100  mb-3 py-sm-2">
+                        Find a desk
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="row my-5 my-sm-0 d-flex justify-content-center align-items-center" style="min-height: 350px;">
+                <div class="col-sm-3">
+                    <div class="card border-0 d-flex justify-content-center align-items-center">
+                        <img src="./Assets/alarm-fill.svg" class="card-img-top h-25 w-25" alt="...">
+                        <div class="card-body">
+                            <p class="card-text shade-1">24 Hr Access</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-0 d-flex justify-content-center align-items-center">
+                        <img src="./Assets/speedometer2.svg" class="card-img-top h-25 w-25" alt="...">
+                        <div class="card-body">
+                            <p class="card-text shade-1">Fast Internet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-0 d-flex justify-content-center align-items-center">
+                        <img src="./Assets/person-fill.svg" class="card-img-top h-25 w-25" alt="...">
+                        <div class="card-body">
+                            <p class="card-text shade-1">Good Coworker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card border-0 d-flex justify-content-center align-items-center">
+                        <img src="./Assets/building.svg" class="card-img-top h-25 w-25" alt="...">
+                        <div class="card-body">
+                            <p class="card-text shade-1">Morden Building</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="fs-1">Explore our</span><br>
+                    <span class="fs-1 fw-bolder">available</span><br>
+                    <span class="fs-1">office spaces.</span>
+                </div>
+                <div class="col-sm-4 fs-5">
+                    <p class="shade-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed provident libero
+                        quam quaerat pariatur voluptatem amet illo! Ea voluptatum rem magni. At reprehenderit labore
+                        aperiam.</p>
+                    <p class="shade-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed provident libero
+                        quam quaerat amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-sm-4 fs-5">
+                    <p class="shade-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed provident libero
+                        quam quaerat amet consectetur adipisicing elit.</p>
+                    <p class="shade-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed provident libero
+                        quam quaerat pariatur voluptatem amet illo! Ea voluptatum rem magni. At reprehenderit labore
+                        aperiam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <div class="card my-5 shadow">
+                <div class="card-body p-5">
+                    <div class="row">
+                        <div class="col-6">space occupancy level</div>
+                        <div class="col-6 text-end">25%</div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="row my-5">
+                        <div class="col-sm-6">
+                            <div class="card-title fs-4 ">Book your tour experience today</div>
+                            <div class="card-text shade-1 fs-5">Sehedual a tour, make an appoinment to rent space</div>
+                            <div class="card-text shade-1 fs-5">at Theamsberg, or ask for more information.</div>
+                        </div>
+                        <div class="col-sm-6 d-flex align-items-center justify-content-end">
+                            <a href="#" class="btn btn-primary">Schedule a tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row my-5">
+                <div class="col-12 fs-5">Top Cities</div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-3 mb-4 mb-sm-0 position-relative img-op-1">
+                    <img src="./Assets/newyork.jpg" class="img-fluid w-100 img-height-set" alt="...">
+                    <div class="position-absolute top-50 start-50 translate-middle text-light fw-bold">NEWYORK</div>
+                </div>
+                <div class="col-sm-3 mb-4 mb-sm-0 position-relative img-op-1">
+                    <img src="./Assets/paris.jpg" class="img-fluid w-100 img-height-set" alt="...">
+                    <div class="position-absolute top-50 start-50 translate-middle text-light fw-bold">PARIS</div>
+                </div>
+                <div class="col-sm-3 mb-4 mb-sm-0 position-relative img-op-1">
+                    <img src="./Assets/london.jpg" class="img-fluid w-100 img-height-set" alt="...">
+                    <div class="position-absolute top-50 start-50 translate-middle text-light fw-bold">LONDON</div>
+                </div>
+                <div class="col-sm-3 mb-4 mb-sm-0 position-relative img-op-1">
+                    <img src="./Assets/tokyo.jpg" class="img-fluid w-100 img-height-set" alt="...">
+                    <div class="position-absolute top-50 start-50 translate-middle text-light fw-bold">TOKYO</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-12 fs-5">Trending Spaces</div>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-4">
+                    <div class="card shadow-sm ">
+                        <div class="position-relative">
+                            <img src="./Assets/space1.jpg" class="card-img-top" style="height: 14rem;" alt="...">
+                            <span class="badge bg-primary position-absolute bottom-0 end-0 me-3 mb-3">Office
+                                Space</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fs-5">Collaborative Workspace</p>
+                            <div class="row">
+                                <div class="col-1 d-flex align-items-center">
+                                    <img src="./Assets/location.svg" alt="">
+                                </div>
+                                <div class="col-11 font-size-2 text-start shade-1">
+                                    New York, Manhattan, USA
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-2">&#11088;</div>
+                                <div class="col-6"><span class="badge rounded-pill bg-success">5.0</span></div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-4 shade-2">Monthly</div>
+                                <div class="col-4 shade-2">People</div>
+                                <div class="col-4 shade-2">Sq.Ft</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-4 ">2100$</div>
+                                <div class="col-4 ">12</div>
+                                <div class="col-4 ">1200</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <img src="./Assets/space2.jpg" class="card-img-top" style="height: 14rem;" alt="...">
+                            <span class="badge bg-success position-absolute bottom-0 end-0 me-3 mb-3">Coworking
+                                Space</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fs-5">Coworking Workspace</p>
+                            <div class="row">
+                                <div class="col-1 d-flex align-items-center">
+                                    <img src="./Assets/location.svg" alt="">
+                                </div>
+                                <div class="col-11 font-size-2 text-start shade-1">
+                                    Bucharest, Sector 2, Romania
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-2">&#11088;</div>
+                                <div class="col-6"><span class="badge rounded-pill bg-success">5.0</span></div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-4 shade-2">Monthly</div>
+                                <div class="col-4 shade-2">People</div>
+                                <div class="col-4 shade-2">Sq.Ft</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-4 ">300$</div>
+                                <div class="col-4 ">24</div>
+                                <div class="col-4 ">3000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <img src="./Assets/space6.jpg" class="card-img-top" style="height: 14rem;" alt="...">
+                            <span class="badge bg-warning position-absolute bottom-0 end-0 me-3 mb-3">Meeting
+                                Space</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fs-5">Meeting Office Space</p>
+                            <div class="row">
+                                <div class="col-1 d-flex align-items-center">
+                                    <img src="./Assets/location.svg" alt="">
+                                </div>
+                                <div class="col-11 font-size-2 text-start shade-1">
+                                    London, Canary Wharf, UK
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-2">&#11088;</div>
+                                <div class="col-6"><span class="badge rounded-pill bg-success">5.0</span></div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-4 shade-2">Hourly</div>
+                                <div class="col-4 shade-2">People</div>
+                                <div class="col-4 shade-2">Sq.Ft</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-4 ">50$</div>
+                                <div class="col-4 ">3-5</div>
+                                <div class="col-4 ">400</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <img src="./Assets/space4.jpg" class="card-img-top" style="height: 14rem;" alt="...">
+                            <span class="badge bg-primary position-absolute bottom-0 end-0 me-3 mb-3">Conference
+                                Space</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fs-5">Conference Room</p>
+                            <div class="row">
+                                <div class="col-1 d-flex align-items-center">
+                                    <img src="./Assets/location.svg" alt="">
+                                </div>
+                                <div class="col-11 font-size-2 text-start shade-1">
+                                    Paris, La Defense, France
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-2">&#11088;</div>
+                                <div class="col-6"><span class="badge rounded-pill bg-success">5.0</span></div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-4 shade-2">Hourly</div>
+                                <div class="col-4 shade-2">People</div>
+                                <div class="col-4 shade-2">Sq.Ft</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-4 ">100$</div>
+                                <div class="col-4 ">2-20</div>
+                                <div class="col-4 ">200</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <img src="./Assets/space5.jpg" class="card-img-top" style="height: 14rem;" alt="...">
+                            <span class="badge bg-success position-absolute bottom-0 end-0 me-3 mb-3">Lifestyle
+                                Space</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fs-5">Lifestyle Space</p>
+                            <div class="row">
+                                <div class="col-1 d-flex align-items-center">
+                                    <img src="./Assets/location.svg" alt="">
+                                </div>
+                                <div class="col-11 font-size-2 text-start shade-1">
+                                    Madrid, Hortalenza, Spain
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-2">&#11088;</div>
+                                <div class="col-6"><span class="badge rounded-pill bg-success">5.0</span></div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-4 shade-2">Daily</div>
+                                <div class="col-4 shade-2">People</div>
+                                <div class="col-4 shade-2">Sq.Ft</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-4 ">350$</div>
+                                <div class="col-4 ">10-25</div>
+                                <div class="col-4 ">100</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <img src="./Assets/space3.jpg" class="card-img-top" style="height: 14rem;" alt="...">
+                            <span class="badge bg-warning position-absolute bottom-0 end-0 me-3 mb-3">Private
+                                Space</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fs-5">Private Space</p>
+                            <div class="row">
+                                <div class="col-1 d-flex align-items-center">
+                                    <img src="./Assets/location.svg" alt="">
+                                </div>
+                                <div class="col-11 font-size-2 text-start shade-1">
+                                    Budapest, Ferencvaros, Hungary
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-1">&#11088;</div>
+                                <div class="col-2">&#11088;</div>
+                                <div class="col-6"><span class="badge rounded-pill bg-success">5.0</span></div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-4 shade-2">Monthly</div>
+                                <div class="col-4 shade-2">People</div>
+                                <div class="col-4 shade-2">Sq.Ft</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-4 ">100$</div>
+                                <div class="col-4 ">1</div>
+                                <div class="col-4 ">10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row pt-3"></div>
+            <div class="row" style="height: 20vh;">
+                <div class="col-12 mt-5 mb-2 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-primary">Browse All</button>
+                </div>
+                <div class=" shade-1 font-size-2 text-center">142 spaces in 6 countries</div>
+            </div>
+            <div class="row pt-5"></div>
+        </div>
+        <div class="container-fluid shadow my-5" style="background-color: rgb(241, 249, 253);">
+            <div class="container">
+                <div class="row pt-5"></div>
+                <div class="row ">
+                    <div class="col-12 fs-1 text-center"><span class="fw-bold">How</span> it Works?</div>
+                </div>
+                <div class="row my-2 fs-5 shade-1">
+                    <div class="col-12 text-center">All you'll need are the details of the building and location, the
+                        type of</div>
+                    <div class="col-12 text-center">space, price and some good quality photographs.</div>
+                </div>
+                <div class="row pt-2"></div>
+                <div class="row py-5">
+                    <div class="col-sm-6 d-flex align-items-center justify-content-center justify-content-sm-end">
+                        <button type="button"
+                            class="btn btn-link text-decoration-none bg-light px-4 d-flex align-items-center justify-content-end text-primary ">
+                            <img src="./Assets/building-blue.svg" class="" height="15px" width="15px" alt="...">
+                            <div class="px-2 align-middle">
+                                Find your Space
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-center mt-4 mt-sm-0 justify-content-sm-start">
+                        <button type="button"
+                            class="btn btn-link text-decoration-none px-4 d-flex align-items-center justify-content-end shade-1 ">
+                            <img src="./Assets/cash.svg" class="" height="20px" width="20px" alt="...">
+                            <div class="px-2 align-middle">
+                                Submit your Space
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="row pb-5 my-5">
+                    <div class="col-sm-4 mb-4 mb-sm-0">
+                        <div class="card px-1 py-5">
+                            <div class="my-card-img rounded-circle">
+                                <img src="./Assets/search.svg" class="card-img-top " width="32px" height="32px"
+                                    alt="...">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-center px-2 fs-5">1.Choose a wrokspace</p>
+                                <p class="card-text text-center shade-1 pb-4">Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Eligendi doloribus ad asd, ipsum, dolor sit amet consectetur adi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-4 mb-sm-0">
+                        <div class="card px-1 py-5">
+                            <div class="my-card-img rounded-circle">
+                                <img src="./Assets/calendar-check.svg" class="card-img-top " width="32px" height="32px"
+                                    alt="...">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-center px-2 fs-5">2. Schedule a tour</p>
+                                <p class="card-text text-center shade-1 pb-4">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sunt et esse illum temporibus tenetur harum fugiat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-4 mb-sm-0">
+                        <div class="card px-1 py-5">
+                            <div class="my-card-img rounded-circle">
+                                <img src="./Assets/cursor-fill.svg" class="card-img-top " width="32px" height="32px"
+                                    alt="...">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title text-center px-2 fs-5">3. Book your Workspace</p>
+                                <p class="card-text text-center shade-1 pb-4">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Culpa voluptates nisi natus iusto assumenda, officiis perferendis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center pb-5">
+                        <button type="button"
+                            class="btn btn-primary px-4 d-flex align-items-center justify-content-end text-primary ">
+                            <img src="./Assets/search-white.svg" class="" height="15px" width="15px" alt="...">
+                            <div class="px-2 align-middle text-light">
+                                Find a Location
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-12 pb-5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-4"></div>
+            <div class="row">
+                <div class="col-12 text-center fs-1 pb-3">Choose a <span class="fw-bolder">plan</span> for your space
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center fs-5 shade-1">Upgrade your space for higher ranking, powerful features
+                    and more aways</div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center fs-5 shade-1">to connect with potential customers.</div>
+            </div>
+            <div class="row my-5">
+                <div class="row py-3"></div>
+                <div class="col-sm-4 my-5 my-sm-0">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body  p-4">
+                            <div class="row">
+                                <div class="col-12 text-center fs-3 shade-1">Free</div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="text-primary align-self-start">$</div>
+                                    <h1 class=" text-primary align-self-center" style="font-size: 70px">0</h1>
+                                    <div class="ps-2 pt-5 shade-2">/month</div>
+                                </div>
+                            </div>
+                            <hr class="shade-2">
+                            <div class="row px-4 py-2">
+                                <div class="col-12 shade-1 fw-bold fs-6 mb-2">Get Listed in the directory:</div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Unlimited photos</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Unlimited vedios</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Receive messages</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Display your contact info</div>
+                                </div>
+                            </div>
+                            <div class="row px-4">
+                                <div class="col-12 d-flex justify-content-center align-items-center my-4 px-3">
+                                    <button type="button"
+                                        class="btn btn-outline-primary border-2 w-100 px-4 d-flex align-items-center justify-content-center my-text-hover">
+                                        <img src="./Assets/cart-plus-fill.svg" class="" height="15px" width="15px"
+                                            alt="...">
+                                        <div class="px-2 align-middle  text-center ">
+                                            Add to cart
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-5 my-sm-0">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body  p-4">
+                            <div class="row">
+                                <div class="col-12 text-center fs-3 shade-1">Silver</div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="text-primary align-self-start">$</div>
+                                    <h1 class=" text-primary align-self-center" style="font-size: 70px">19</h1>
+                                    <div class="ps-2 pt-5 shade-2">/month</div>
+                                </div>
+                            </div>
+                            <hr class="shade-2">
+                            <div class="row px-4 py-2">
+                                <div class="col-12 shade-1 fw-bold fs-6 mb-2">Everything in the Free Plan</div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Rank booster</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Lead capturing button</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Connect your social media</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Display your contact info</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Link to your website</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Promote your best review</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Booking & lead Logs</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Priority customer support</div>
+                                </div>
+                            </div>
+                            <div class="row px-4">
+                                <div class="col-12 d-flex justify-content-center align-items-center my-4 px-3">
+                                    <button type="button"
+                                        class="btn btn-outline-primary border-2 w-100 px-4 d-flex align-items-center justify-content-center my-text-hover ">
+                                        <img src="./Assets/cart-plus-fill.svg" class="" height="15px" width="15px"
+                                            alt="...">
+                                        <div class="px-2 align-middle  text-center">
+                                            Add to cart
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-5 my-sm-0">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body  p-4">
+                            <div class="row">
+                                <div class="col-12 text-center fs-3 shade-1">Gold</div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="text-primary align-self-start">$</div>
+                                    <h1 class=" text-primary align-self-center" style="font-size: 70px">49</h1>
+                                    <div class="ps-2 pt-5 shade-2">/month</div>
+                                </div>
+                            </div>
+                            <hr class="shade-2">
+                            <div class="row px-4 py-2">
+                                <div class="col-12 shade-1 fw-bold fs-6 mb-2">Everything in the other plans:</div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Appear at the top of your city's search page</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Appear at the top of <br> popular spaces page</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Receive a special "Popular Now banner"</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">A customer pin drop on the map</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Spaces Instagram takeover<br>(*annual subscription)</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Priority customer support and on boading</div>
+                                </div>
+                                <div class="col-12 shade-1 fs-6 my-2  d-flex align-items-center">
+                                    <img src="./Assets/check-circle-fill.svg" class="" height="15px" width="15px"
+                                        alt="...">
+                                    <div class="px-3">Advertising campaign</div>
+                                </div>
+                            </div>
+                            <div class="row px-4">
+                                <div class="col-12 d-flex justify-content-center align-items-center my-4 px-3">
+                                    <button type="button"
+                                        class="btn btn-outline-primary border-2 w-100 px-4 d-flex align-items-center justify-content-center my-text-hover btn-hover-text">
+                                        <img src="./Assets/cart-plus-fill.svg" class="" height="15px" width="15px"
+                                            alt="...">
+                                        <div class="px-2 align-middle text-center">
+                                            Add to cart
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-5" style="background-color: rgb(241, 249, 253);">
+            <div class="container">
+                <div class="row py-4"></div>
+                <div class="row py-5">
+                    <!-- <div class="col-4"></div> -->
+                    <div class="col-12 col-sm-4 offset-sm-4 col-md-4 offset-md-4  d-flex justify-content-around align-items-center">
+                        <div class="">
+                            <img src="./Assets/girl1.jpg" class="rounded-circle " width="64px" height="64px" alt="...">
+                        </div>
+                        <div class="">
+                            <img src="./Assets/man1.jpg" class="rounded-circle  opacity-50" width="64px" height="64px"
+                                alt="...">
+                        </div>
+                        <div class="">
+                            <img src="./Assets/girl2.jpg" class="rounded-circle opacity-50" width="64px" height="64px"
+                                alt="...">
+                        </div>
+                    </div>
+                    <div class="col-4 "></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="px-1">&#11088;</div>
+                        <div class="px-1">&#11088;</div>
+                        <div class="px-1">&#11088;</div>
+                        <div class="px-1">&#11088;</div>
+                        <div class="px-1">&#11088;</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10 text-center align-middle shade-1 py-3 fs-5 px-5">Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Placeat eius, aliquam repudiandae officiis beatae deleniti
+                        accusamus nihil corporis modi, ex tenetur atque quae! Consequuntur quibusdam maxime rerum,
+                        inventore omnis repellat quis explicabo aliquam!</div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center text-primary">
+                        - Oana Calota
+                    </div>
+                </div>
+                <div class="row py-5"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 fs-2 text-center">Are you ready for Spaces?</div>
+                <div class="col-12 fs-5 mt-3 text-center shade-1 mb-3">Check out our offers:</div>
+            </div>
+            <div class="row ">
+                <table class="table shade-1 ">
+                    <tbody>
+                        <tr>
+                            <td scope="col" class="py-3">Features</td>
+                            <td scope="col" class="py-3">Standerd License</td>
+                            <td scope="col" class="py-3">Extended License</td>
+                        </tr>
+                        <tr style="background-color: rgb(241, 249, 253);">
+                            <td class="py-3">Create single website for client</td>
+                            <td class="py-3"><span>&#9989;</span></td>
+                            <td class="py-3"><span>&#9989;</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Create single personal website</td>
+                            <td class="py-3"><span>&#9989;</span></td>
+                            <td class="py-3"><span>&#9989;</span></td>
+                        </tr>
+                        <tr style="background-color: rgb(241, 249, 253);">
+                            <td class="py-3">6 month support included</td>
+                            <td class="py-3"><span>&#9989;</span></td>
+                            <td class="py-3"><span>&#9989;</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Create multiple personal website</td>
+                            <td class="py-3"><span>&#10060;</span></td>
+                            <td class="py-3"><span>&#9989;</span></td>
+                        </tr>
+                        <tr style="background-color: rgb(241, 249, 253);">
+                            <td class="py-3">Create multiple website for client</td>
+                            <td class="py-3"><span>&#10060;</span></td>
+                            <td class="py-3"><span>&#9989;</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3"></td>
+                            <td class="py-3"><button class="btn btn-primary h-50">Buy Standard Licence - $49</button></td>
+                            <td class="py-3"><button type="button" class="btn btn-outline-dark border-2 h-50">Buy Extended
+                                    Licence - $79</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color: rgb(30, 44, 73);">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-sm-3 p-3">
+                        <div class="mb-4 pe-3">
+                            <a class="navbar-brand text-light fs-3 fw-bold" href="#">
+                                <u>S</u>PACES
+                            </a>
+                        </div>
+                        <div class="shade-1 pe-md-3">Lorem ipsum dolor sit consectetur, amet adipisicing at. Nobis, ipsum
+                            perferendis a Repellendus, error dicta voluptate narco.
+                        </div>
+                        <div class="mt-3 shade-1 d-flex">
+                            <div class="m-2">
+                                <img src="./Assets/twitter.svg" class="" height="16px" width="16px"
+                                            alt="..." style="cursor: pointer;">
+                            </div>
+                            <div class="m-2">
+                                <img src="./Assets/facebook.svg" class="" height="16px" width="16px"
+                                            alt="..." style="cursor: pointer;">
+                            </div>
+                            <div class="m-2">
+                                <img src="./Assets/github.svg" class="" height="16px" width="16px"
+                                            alt="..." style="cursor: pointer;">
+                            </div>
+                            <div class="m-2">
+                                <img src="./Assets/dribbble.svg" class="" height="16px" width="16px"
+                                            alt="..." style="cursor: pointer;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 py-3">
+                        <div class="mb-3 ">
+                            <a class="navbar-brand text-light fs-6" href="#">
+                                About Us
+                            </a>
+                        </div>
+                        <div class="shade-1 pb-3 ">Blog</div>
+                        <div class="shade-1 pb-3 ">About Us</div>
+                        <div class="shade-1 pb-3 ">Products</div>
+                        <div class="shade-1 pb-3 ">Contact Us</div>
+                    </div>
+                    <div class="col-sm-2 py-3">
+                        <div class="mb-3">
+                            <a class="navbar-brand text-light fs-6" href="#">
+                                Market
+                            </a>
+                        </div>
+                        <div class="shade-1 pb-3">Sales FAQ</div>
+                        <div class="shade-1 pb-3">How to Register</div>
+                        <div class="shade-1 pb-3">Sell Goods</div>
+                        <div class="shade-1 pb-3">Receive Payment</div>
+                        <div class="shade-1 pb-3">Sell Good</div>
+                        <div class="shade-1 pb-3">Receive Payment</div>
+                    </div>
+                    <div class="col-sm-5 py-3">
+                        <div class="mb-3 px-md-5">
+                            <a class="navbar-brand text-light fs-6" href="#">
+                                Subscribe
+                            </a>
+                        </div>
+                        <div class="shade-1 mb-3 px-md-5">Join our mailing list. We write rarely. but only the best contetn.</div>
+                        <div class="px-md-5  mb-3">
+                            <input type="email" class="form-control py-2" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="px-md-5 mb-4">
+                            <button class="btn  btn-success w-100 py-2">Subscribe</button>
+                        </div>
+                        <div class="px-md-5 shade-1" style="font-size: 14px;">
+                            We'll never share your details. Seee our <span class="text-light">Privacy Policy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-light text-center pb-5">
+                        &copy; 2020 Theamsberg. All right reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
