@@ -44,6 +44,8 @@
 }
 .img-op-1:hover{
     opacity: 0.7;
+    /* backdrop-filter: blur(5px); */
+    /* filter: blur(2px); */
 }
 .my-card-img{
     margin: 20px auto 20px auto;
